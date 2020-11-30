@@ -1,7 +1,17 @@
 import scala.collection.mutable.ListBuffer
 //看案例
 
-
+/**
+  * lst0(2)=3
+  * item=1
+  * item=2
+  * item=3
+  * lst1=ListBuffer(4, 5)
+  * lst0=ListBuffer(1, 2, 3, 4, 5)
+  * =======删除=======
+  * lst1=ListBuffer(4, 5)
+  * item=4
+  */
 object Demo {
   def main(args: Array[String]): Unit = {
     //构建一个可变列表，初始有3个元素1,2,3
