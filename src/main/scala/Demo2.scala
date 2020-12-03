@@ -2,6 +2,13 @@
 
 import scala.collection.mutable
 
+/**
+  * Queue(1)
+  * ------------
+  * Queue(1, 2, 3, 4)
+  * Queue(2, 3, 4)
+  * Queue(2, 3, 4, 9, 8, 7)
+  */
 object Demo2 {
   def main(args: Array[String]): Unit = {
 

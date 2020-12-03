@@ -1,6 +1,12 @@
 import scala.collection.mutable
 //说明，从输出的结果看到，输出顺序和声明顺序一致。
-
+/**
+  * Map(Alice -> 10, Bob -> 20, Kotlin -> 30)
+  * Map(A -> 1, C -> 3, B -> 2)
+  * 1
+  * None
+  * Map(A -> 1, C -> 3, B -> 北京)
+  */
 object Demo3 {
   def main(args: Array[String]): Unit = {
 

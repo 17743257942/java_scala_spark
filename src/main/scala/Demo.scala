@@ -39,7 +39,7 @@ object Demo {
     val lst3 = lst0 :+ 5
 
     //删除
-    println("=====删除=======")
+    println("=======删除=======")
     println("lst1=" + lst1)
     lst1.remove(1)
     for (item <- lst1) {
