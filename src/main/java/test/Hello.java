@@ -1,6 +1,7 @@
 package test;
 
 import _1stack._4pet.Cat;
+
 import java.text.ParseException;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
@@ -17,7 +18,12 @@ public class Hello {
         String dfrom = "2019-11-02";
         String dto = "2021-01-01";
         yMdWeek(dfrom, dto);
-        AtomicReference<Cat> aa= new AtomicReference<Cat>();
+        AtomicReference<Cat> aa = new AtomicReference<Cat>();
+        System.out.println("-------------------");
+        byte b1 = -128; //10000000 -0 表示-128
+        System.out.println(Integer.toBinaryString(b1)); //11111111111111111111111110000000
+        byte b2 = (byte) 0B11111111;
+        System.out.println(b2);
 
     }
 
