@@ -2,6 +2,7 @@ package test;
 
 import _1stack._4pet.Cat;
 
+import java.io.*;
 import java.text.ParseException;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
@@ -23,7 +24,37 @@ public class Hello {
         byte b1 = -128; //10000000 -0 表示-128
         System.out.println(Integer.toBinaryString(b1)); //11111111111111111111111110000000
         byte b2 = (byte) 0B11111111;
-        System.out.println(b2);
+        System.out.println(b2); //-1
+        byte b3 = (byte) 0x8F;
+        System.out.println(b3);//-113
+        System.out.println(Integer.toBinaryString(0x8F));
+        System.out.println();
+        String path = "E:\\untitled\\src\\main\\java\\test\\Hello1.class";
+        writeXlass(path);
+    }
+
+    private static void writeXlass(String path) {
+        FileInputStream in = null;
+        ByteArrayOutputStream out = null;
+        try {
+            in = new FileInputStream(new File(path));
+            out = new ByteArrayOutputStream();
+            byte[] buffer = new byte[1024];
+            int size = 0;
+            while ((size = in.read(buffer)) != -1) {
+                out.write(buffer, 0, size);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                in.close();
+            } catch (IOException e) {
+
+                e.printStackTrace();
+            }
+        }
 
     }
 
